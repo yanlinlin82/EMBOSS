@@ -1,0 +1,12 @@
+.deps/
+.libs/
+*.lo
+*.la
+Makefile
+ajax/core/config.h
+ajax/core/stamp-h1
+config.log
+config.status
+libtool
+emboss/*
+!emboss/*.c
