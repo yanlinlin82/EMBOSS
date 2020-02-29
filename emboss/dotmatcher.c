@@ -220,11 +220,11 @@ int main(int argc, char **argv)
 
 	ajGraphicsDrawposTextAtmid(flen1*(float)0.5,
                                    (float)0.0-(xmargin/(float)2.0),
-		       ajGraphGetXlabelC(graph));
+		       ajGraphGetYlabelC(graph));
 	ajGraphicsDrawposTextAtlineJustify((float)0.0-(xmargin*(float)0.75),
                                            flen2*(float)0.5,
 			(float)0.0-(xmargin*(float)0.75),flen1,
-			ajGraphGetYlabelC(graph),0.5);
+			ajGraphGetXlabelC(graph),0.5);
 
 	ajGraphicsSetCharscale(0.5);
     }
