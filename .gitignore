@@ -10,3 +10,4 @@ config.status
 libtool
 emboss/*
 !emboss/*.c
+autom4te.cache/
