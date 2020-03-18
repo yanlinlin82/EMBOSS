@@ -96,8 +96,8 @@ int main(int argc, char **argv)
     embInit("dottup", argc, argv);
 
     wordlen = ajAcdGetInt("wordsize");
-    seq1    = ajAcdGetSeq("bsequence");
-    seq2    = ajAcdGetSeq("asequence");
+    seq1    = ajAcdGetSeq("asequence");
+    seq2    = ajAcdGetSeq("bsequence");
     graph   = ajAcdGetGraph("graph");
     boxit   = ajAcdGetBoolean("boxit");
     stretch = ajAcdGetToggle("stretch");
@@ -170,7 +170,7 @@ int main(int argc, char **argv)
 	    onefifth  = xmargin * (float)0.2;
 	    ajGraphicsDrawposTextAtmid(fbegin1+flen1*(float)0.5,
                                        fbegin1-(onefifth*(float)3.0),
-                                       ajGraphGetYlabelC(graph));
+                                       ajGraphGetXlabelC(graph));
 
 	    if(len2/len1 > 10 )
 	    {
@@ -204,7 +204,7 @@ int main(int argc, char **argv)
                                                fbegin2+flen2*(float)0.5,
                                                fbegin2-(onefifth*(float)4.),
                                                fbegin2+flen2,
-                                               ajGraphGetXlabelC(graph),
+                                               ajGraphGetYlabelC(graph),
                                                0.5);
 
 	    if(len1/len2 > 10 )
